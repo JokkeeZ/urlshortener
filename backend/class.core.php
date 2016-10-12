@@ -31,6 +31,7 @@ class Core {
 
 	/**
 	 * Initializes Database and Shortener classes.
+	 * @return void
 	 */
 	public static function initialize() {
 		self::$database = new Database('localhost', 'root', '', 'shorturls');
@@ -41,6 +42,7 @@ class Core {
 	 * Get's servers base url.
 	 * @see http://stackoverflow.com/a/2820771
 	 * @example "http://localhost/"
+	 * @return void
 	 */
 	public static function getBaseUrl() {
 		return sprintf(
